@@ -1,0 +1,25 @@
+button {
+    padding: 12px 30px;
+    background-color: green;
+    color: white;
+    border: 0;
+    outline: none;
+    position: relative;
+    cursor: pointer;
+    border-radius: 6px;
+}
+
+button::after {
+    height: 20px;
+    width: 20px;
+    background-color: red;
+    color: white;
+    position: absolute;
+    top: -5px;
+    right: -10px;
+    content: attr(data-bs-numbers);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 100%;
+}
